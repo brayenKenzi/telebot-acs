@@ -1,0 +1,17 @@
+{
+  "name": "genieacs-telegram-bot",
+  "version": "1.0.0",
+  "description": "Multi-server GenieACS Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+} 
