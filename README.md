@@ -29,14 +29,21 @@ Bot Telegram untuk mengelola dan memantau perangkat GenieACS dengan mudah. Bot i
 
 1. Buat file `config.js` dengan format berikut:
 name: "Nama Bot",
+
 botToken: "TOKEN_BOT_TELEGRAM",
+
 adminIds: ["ID_ADMIN_1", "ID_ADMIN_2"],
-genieacs: {
+
+genieacs: 
+
 baseUrl: "http://your-genieacs-server:7557",
+
 username: "username",
+
 password: "password"
 
-2. Ganti nilai-nilai berikut:
+
+3. Ganti nilai-nilai berikut:
    - `botToken`: Token bot Telegram dari BotFather
    - `adminIds`: Array berisi ID Telegram admin
    - `genieacs.baseUrl`: URL server GenieACS
