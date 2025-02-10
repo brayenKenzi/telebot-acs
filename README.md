@@ -48,10 +48,13 @@ password: "password"
 1. Clone repository ini
    git clone https://github.com/alijayanet/telebot-acs.git
 2. Masuk ke direktori project
+   
    cd telebot-acs
-3. Install dependensi
+4. Install dependensi
+   
    npm install
-4. Jalankan bot
+6. Jalankan bot
+   
    node index.js
 
 ### 📱 Cara Penggunaan
