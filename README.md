@@ -28,6 +28,7 @@ Bot Telegram untuk mengelola dan memantau perangkat GenieACS dengan mudah. Bot i
 ## ⚙️ Konfigurasi
 
 1. Buat file `config.js` dengan format berikut:
+   
 name: "Nama Bot",
 
 botToken: "TOKEN_BOT_TELEGRAM",
