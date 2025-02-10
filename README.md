@@ -28,3 +28,67 @@ Bot Telegram untuk mengelola dan memantau perangkat GenieACS dengan mudah. Bot i
 ## ⚙️ Konfigurasi
 
 1. Buat file `config.js` dengan format berikut:
+name: "Nama Bot",
+botToken: "TOKEN_BOT_TELEGRAM",
+adminIds: ["ID_ADMIN_1", "ID_ADMIN_2"],
+genieacs: {
+baseUrl: "http://your-genieacs-server:7557",
+username: "username",
+password: "password"
+
+2. Ganti nilai-nilai berikut:
+   - `botToken`: Token bot Telegram dari BotFather
+   - `adminIds`: Array berisi ID Telegram admin
+   - `genieacs.baseUrl`: URL server GenieACS
+   - `genieacs.username`: Username GenieACS
+   - `genieacs.password`: Password GenieACS
+
+## 🚀 Instalasi
+
+1. Clone repository ini
+   git clone https://github.com/alijayanet/telebot-acs.git
+2. Masuk ke direktori project
+   cd telebot-acs
+3. Install dependensi
+   npm install
+4. Jalankan bot
+   node index.js
+
+### 📱 Cara Penggunaan
+
+### Untuk Admin
+
+1. Start bot dengan mengirim `/start`
+2. Gunakan `/devices` untuk melihat semua perangkat
+3. Untuk menambah pelanggan:
+   - Minta pelanggan mengirim `/myid`
+   - Gunakan `/addcustomer {ID_TELEGRAM} {NAMA} {DEVICE_SN}`
+   - Contoh: `/addcustomer 123456789 "John Doe" ZTEGC8F12345`
+
+### Untuk Pelanggan
+
+1. Start bot dengan mengirim `/start`
+2. Kirim `/myid` dan berikan ID ke admin
+3. Setelah didaftarkan, gunakan:
+   - `/mystatus` untuk cek status perangkat
+   - `/mywifi` untuk cek status WiFi
+   - `/changepass {PASSWORD}` untuk ganti password WiFi
+
+## 🔒 Keamanan
+
+- Bot menggunakan sistem autentikasi berbasis ID Telegram
+- Hanya admin yang dapat mengakses fitur administratif
+- Pelanggan hanya dapat mengakses perangkat yang terdaftar untuk mereka
+- Password dan kredensial sensitif disimpan dengan aman
+
+## 🤝 Kontribusi
+
+Kontribusi selalu diterima! Silakan buat pull request atau laporkan issue jika menemukan bug.
+
+## 📄 Lisensi
+
+Project ini dilisensikan di bawah [MIT License](LICENSE).
+
+## ⚠️ Disclaimer
+
+Bot ini adalah alat bantu untuk mengelola perangkat
