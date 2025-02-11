@@ -57,7 +57,7 @@ apt install git curl -y
 
 1. Clone repository ini
 
-git clone https://github.com/alijayanet/telebot-acs.git
+git clone https://github.com/alijayanet/telebot-acs
 
 3. Masuk ke direktori project
    
