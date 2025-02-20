@@ -181,7 +181,6 @@ class GenieACSBot {
                 const status = device.Events?.Registered?._value ? '🟢 Online' : '🔴 Offline';
                 const message = 
                     `📱 *Status Perangkat Anda*\n\n` +
-                    `Status: ${status}\n` +
                     `Pelanggan: ${this.escapeMarkdown(customer.name)}\n` +
                     `Signal: ${this.escapeMarkdown(device.VirtualParameters?.RXPower?._value || '-')} dBm\n` +
                     `IP: ${this.escapeMarkdown(device.VirtualParameters?.pppoeIP?._value || '-')}\n` +
@@ -294,7 +293,6 @@ class GenieACSBot {
                         
                         // Build message
                         message += `${index + 1}\\. *${this.escapeMarkdown(serialNumber)}*\n`;
-                        message += `Status: ${status}\n`;
                         message += `Device ID: \`${this.escapeMarkdown(deviceID || '-')}\`\n`;
                         message += `Manufacturer: \`${this.escapeMarkdown(deviceInfo._Manufacturer || '-')}\`\n`;
                         message += `OUI: \`${this.escapeMarkdown(deviceInfo._OUI || '-')}\`\n`;
@@ -415,7 +413,6 @@ class GenieACSBot {
                             `MAC PON: \`${this.escapeMarkdown(vParams.PonMac?._value || '-')}\`\n\n` +
                             
                             `*Status:*\n` +
-                            `Status: ${status}\n` +
                             `Device Uptime: \`${this.escapeMarkdown(vParams.getdeviceuptime?._value || '-')}\`\n` +
                             `PPPoE Uptime: \`${this.escapeMarkdown(vParams.getpppuptime?._value || '-')}\`\n\n` +
                             
