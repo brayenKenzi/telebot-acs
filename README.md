@@ -1,4 +1,10 @@
 # Bot GenieACS Telegram
+```
+apt install git curl -y
+```
+```
+git clone https://github.com/brayenKenzi/telebot-acs
+```
 
 Bot Telegram untuk mengelola dan memantau perangkat GenieACS dengan mudah. Bot ini memungkinkan admin dan pelanggan untuk mengakses informasi perangkat dan melakukan konfigurasi dasar melalui Telegram.
 
